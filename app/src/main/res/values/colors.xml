@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="ic_launcher_background">#FCFCFA</color>
+    <color name="teal_700">#FF018786</color>
+    <color name="green_500">#018786</color>
+    <color name="red_600">#b00020</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="transparent">#00FFFFFF</color>
+    <color name="blue_accent_300">#02d5ee</color>
+    <color name="gray">#808080</color>
+    <color name="dark_gray">#636363</color>
+    <color name="blue_700">#0288D1</color>
+    <color name="blue_500">#03A9F4</color>
+    <color name="blue_200">#81D4FA</color>
+    <color name="gold">#FFD770</color>
+    <color name="light_gray">#CCCCCC</color>
+    <!--<color name="mtrl_textinput_default_box_stroke_color">#cccccc</color>-->
+    <color name="blue_shadow_color">#B9DADF</color>
+    <color name="loader_background_color">#55AAAAAA</color>
+
+    <color name="primary_color">#276DDD</color>
+
+    <color name="background">#E1F5FE</color>
+    <color name="cardBackground">#D7E1E3</color>
+
+    <color name="red">#EF5350</color>
+    <color name="yellow">#FFEE58</color>
+    <color name="green">#66BB6A</color>
+    <color name="grey">#808080</color>
+    <color name="grey_transparent">#BF808080</color>
+    <color name="background_transparent">#33808080</color>
+</resources>

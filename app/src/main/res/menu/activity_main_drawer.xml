@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:showIn="navigation_view">
+    <group android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_profile"
+            android:icon="@drawable/ic_outlined_person_24"
+            android:title="Profile" />
+    </group>
+    <group
+        android:id="@+id/bottom"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/nav_home"
+            android:icon="@drawable/ic_outlined_home_24"
+            android:title="Store" />
+        <item
+            android:id="@+id/nav_store_info"
+            android:icon="@drawable/ic_info"
+            android:title="Store Info" />
+        <item
+            android:id="@+id/nav_orders"
+            android:icon="@drawable/ic_filled_library_books_24"
+            android:title="Orders" />
+
+    </group>
+
+    <item
+        android:title="Contact Us"
+        android:id="@+id/contact">
+        <menu>
+            <group
+                android:checkableBehavior="none">
+                <item
+                    android:id="@+id/action_whatsapp"
+                    android:orderInCategory="100"
+                    android:title="WhatsApp"
+                    android:icon="@drawable/ic_whatsapp"/>
+                <item
+                    android:id="@+id/action_query"
+                    android:orderInCategory="100"
+                    android:title="Query or Feedback"
+                    android:icon="@drawable/ic_feedback" />
+            </group>
+        </menu>
+    </item>
+
+</menu>

@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/background"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/nav_bar"
+        android:layout_width="match_parent"
+        android:layout_height="64dp"
+        android:gravity="center_vertical"
+        android:elevation="4dp">
+        <ImageView
+            android:id="@+id/back_button"
+            android:layout_width="54dp"
+            android:layout_height="54dp"
+            android:padding="16dp"
+            android:clickable="true"
+            android:focusable="true"
+            android:src="@drawable/ic_outline_arrow_back_24"
+            app:tint="@color/gray" />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textStyle="bold"
+            android:textSize="16sp"
+            android:layout_marginStart="8dp"
+            android:layout_gravity="center_vertical"
+            android:text="@string/favorites"/>
+    </LinearLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/products_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/nav_bar"
+        android:paddingBottom="120dp"
+        android:nestedScrollingEnabled="true"
+        android:paddingHorizontal="8dp" />
+
+    <LinearLayout
+        android:id="@+id/emptyLayout"
+        android:visibility="gone"
+        android:gravity="center"
+        android:layout_below="@+id/nav_bar"
+        android:layout_gravity="center"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" >
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:scaleType="centerCrop"
+            android:id="@+id/empty_enim"
+            android:layout_width="120dp"
+            android:layout_height="120dp"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/cart_empty" />
+
+        <TextView
+            android:gravity="center"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/no_items_in_cart_text"
+            android:fontFamily="@font/nunito_sans"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:textSize="16sp"/>
+    </LinearLayout>
+
+</RelativeLayout>

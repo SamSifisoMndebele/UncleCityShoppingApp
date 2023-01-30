@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/action_no_filter"
+        android:title="No search filter"/>
+    <item
+        android:id="@+id/action_category"
+        android:title="Search by category"/>
+    <item
+        android:id="@+id/action_product_name"
+        android:title="Search by product name"/>
+    <item
+        android:id="@+id/action_brand"
+        android:title="Search by brand"/>
+    <item
+        android:id="@+id/action_description"
+        android:title="Search by description"/>
+</menu>

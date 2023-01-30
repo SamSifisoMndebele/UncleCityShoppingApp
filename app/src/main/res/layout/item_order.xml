@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<com.google.android.material.card.MaterialCardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/product_card"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_margin="2dp"
+    android:clickable="false"
+    android:focusable="true"
+    app:cardCornerRadius="10dp"
+    android:backgroundTint="@color/background"
+    app:cardElevation="0dp"
+    app:strokeColor="@color/primary_color"
+    app:strokeWidth="1.5dp">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/order_number_jn"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginBottom="2dp"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:lines="1"
+            android:textSize="16sp"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="@id/order_status"
+            app:layout_constraintBottom_toBottomOf="@id/order_status"
+            android:text="Order #:" />
+
+        <TextView
+            android:id="@+id/order_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="4dp"
+            android:layout_marginTop="4dp"
+            android:layout_marginEnd="4dp"
+            android:fontFamily="@font/nunito_sans_extrabold"
+            android:lines="1"
+            android:textIsSelectable="true"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:textColor="@color/primary_color"
+            app:layout_constraintEnd_toStartOf="@+id/order_status"
+            app:layout_constraintStart_toEndOf="@id/order_number_jn"
+            app:layout_constraintTop_toTopOf="@id/order_status"
+            app:layout_constraintBottom_toBottomOf="@id/order_status"
+            tools:text="123456789" />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginHorizontal="16dp"
+            android:lines="1"
+            android:textSize="13sp"
+            android:layout_marginVertical="2dp"
+            app:layout_constraintBottom_toTopOf="@+id/order_time"
+            app:layout_constraintEnd_toStartOf="@+id/total_price"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/order_status"
+            tools:text="some title may be two lines" />
+
+        <TextView
+            android:id="@+id/order_time"
+            android:layout_width="0dp"
+            android:textSize="12sp"
+            android:layout_height="wrap_content"
+            app:layout_constraintBottom_toTopOf="@id/products_names"
+            app:layout_constraintEnd_toStartOf="@+id/total_price"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintVertical_bias="1.0" />
+
+
+        <TextView
+            android:id="@+id/products_names"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:textSize="12sp"
+            android:maxLines="2"
+            android:text="hjakbnkjcz\niuhsizu"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/product_quantity"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginHorizontal="16dp"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <TextView
+            android:id="@+id/total_price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            android:layout_marginVertical="4dp"
+            app:layout_constraintBottom_toTopOf="@id/product_quantity"
+            app:layout_constraintTop_toBottomOf="@+id/order_status"
+            app:layout_constraintEnd_toEndOf="@id/product_quantity"
+            tools:text="R1234.56" />
+
+        <TextView
+            android:id="@+id/order_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="4dp"
+            android:backgroundTint="@color/blue_shadow_color"
+            android:background="@drawable/layout_background_rounded_corners"
+            android:orientation="horizontal"
+            android:padding="6dp"
+            android:text="Awaiting Payment"
+            android:textColor="@color/primary_color"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/product_quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            tools:text="Qty: 16"
+            android:layout_marginBottom="8dp"
+            android:layout_marginEnd="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</com.google.android.material.card.MaterialCardView>

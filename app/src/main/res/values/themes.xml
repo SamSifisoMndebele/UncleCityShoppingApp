@@ -1,0 +1,56 @@
+<resources xmlns:tools="http://schemas.android.com/tools">
+    <!-- Base application theme. -->
+    <style name="Theme.UncleCity" parent="Theme.MaterialComponents.Light.NoActionBar">
+        <!-- Primary brand color. -->
+        <item name="colorPrimary">@color/primary_color</item>
+        <item name="colorPrimaryVariant">@color/blue_700</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <!-- Secondary brand color. -->
+        <item name="colorSecondary">@color/primary_color</item>
+        <item name="colorSecondaryVariant">@color/blue_500</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <!-- Status bar color. -->
+        <item name="android:statusBarColor">@color/background</item>
+        <!-- Customize your theme here. -->
+        <item name="android:windowLightStatusBar">true</item>
+    </style>
+
+    <!--Image Shape Appearances-->
+    <style name="rounded_square">
+        <item name="cornerSize">36dp</item>
+    </style>
+    <style name="rounded_square_8">
+        <item name="cornerSize">8dp</item>
+    </style>
+    <style name="rounded_square_4">
+        <item name="cornerSize">4dp</item>
+    </style>
+
+    <style name="rounded_square_32">
+        <item name="cornerSize">32dp</item>
+    </style>
+    <style name="rounded_square_48">
+        <item name="cornerSize">48dp</item>
+    </style>
+    <style name="rounded_square_64">
+        <item name="cornerSize">64dp</item>
+    </style>
+
+    <style name="rounded_square_60">
+        <item name="cornerSize">60dp</item>
+    </style>
+
+    <style name="rounded_square_item">
+        <item name="cornerSizeBottomRight">16dp</item>
+        <item name="cornerSizeTopRight">16dp</item>
+        <item name="cornerSizeTopLeft">4dp</item>
+        <item name="cornerSizeBottomLeft">4dp</item>
+    </style>
+
+    <!--Splash screen style-->
+    <style name="Theme.UncleCity.Splash" parent="Theme.SplashScreen">
+        <item name="windowSplashScreenAnimatedIcon">@mipmap/ic_launcher_foreground</item>
+        <item name="postSplashScreenTheme">@style/Theme.UncleCity</item>
+        <item name="android:windowSplashScreenBrandingImage" tools:targetApi="s">@drawable/ic_logo_branding</item>
+    </style>
+</resources>
